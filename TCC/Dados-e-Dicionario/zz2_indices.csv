@@ -1,0 +1,4 @@
+﻿Ordem;Expressão;Descrição
+1;ZZ2_FILIAL + ZZ2_CONFOR + DTOS(ZZ2_DATA) + ZZ2_HORA;Chave primária
+2;ZZ2_FILIAL + ZZ2_FORNEC + ZZ2_LOJAFO + DTOS(ZZ2_DATA);Por fornecedor e data
+3;ZZ2_FILIAL + DTOS(ZZ2_DATA);Por data

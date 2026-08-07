@@ -1,0 +1,4 @@
+﻿Ordem;Expressão;Descrição
+1;ZZ1_FILIAL + ZZ1_CODIGO;Chave primária
+2;ZZ1_FILIAL + ZZ1_FORNEC + ZZ1_LOJAFO;Por fornecedor
+3;ZZ1_FILIAL + DTOS(ZZ1_VALCER);Por validade do certificado

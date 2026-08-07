@@ -1,0 +1,11 @@
+﻿Título;Campo;Tipo;Tamanho;Decimais;X3_PICTURE;Contexto;Obrigatório;Observação
+Filial;ZZ1_FILIAL;C;2;0;;Real;Sim;Usar xFilial('ZZ1')
+Código;ZZ1_CODIGO;C;6;0;;Real;Sim;Chave sequencial
+Cód. Fornecedor;ZZ1_FORNEC;C;6;0;;Real;Sim;Validar existência na SA2
+Loja Fornecedor;ZZ1_LOJAFO;C;2;0;;Real;Sim;Compor chave da SA2
+Nome Fornecedor;ZZ1_NOMEFO;C;40;0;;Virtual;Não;Preenchido por POSICIONE
+Dados Certificado;ZZ1_CERTIF;C;256;0;;Real;Sim;Identificação/dados do certificado
+Val. Certificado;ZZ1_VALCER;D;8;0;;Real;Sim;Não pode estar vencido na inclusão
+Tolerância (%);ZZ1_TOLERA;N;5;2;@E 999,999,999.99;Real;Sim;Entre 0 e 100
+Qtd. Conforme;ZZ1_TOTOK;N;12;2;@E 999,999,999.99;Real;Sim;Consolidado das ocorrências
+Qtd. Não Conforme;ZZ1_TOTNOK;N;12;2;@E 999,999,999.99;Real;Sim;Consolidado das ocorrências

@@ -1,0 +1,14 @@
+﻿Título;Campo;Tipo;Tamanho;Decimais;X3_PICTURE;Contexto;Obrigatório;Observação
+Filial;ZZ2_FILIAL;C;2;0;;Real;Sim;Usar xFilial('ZZ2')
+Controle;ZZ2_CONFOR;C;6;0;;Real;Sim;Referência à ZZ1
+Cód. Fornecedor;ZZ2_FORNEC;C;6;0;;Real;Sim;Preenchido por gatilho
+Loja Fornecedor;ZZ2_LOJAFO;C;2;0;;Real;Sim;Preenchido por gatilho
+Nome Fornecedor;ZZ2_NOMEFO;C;40;0;;Virtual;Não;Nome via SA2
+Data Ocorrência;ZZ2_DATA;D;8;0;;Real;Sim;Não pode ser futura
+Hora;ZZ2_HORA;C;5;0;;Real;Sim;Preenchida com Time()
+Produto;ZZ2_CODPRO;C;15;0;;Real;Sim;Validar existência na SB1
+Qtde. Conforme;ZZ2_QTDOK;N;12;0;@E 999,999,999.99;Real;Sim;Não negativa
+Qtde. Não Conforme;ZZ2_QTDNOK;N;12;0;@E 999,999,999.99;Real;Sim;Não negativa
+Valor Unitário;ZZ2_VLRUNI;N;12;2;@E 999,999,999.99;Real;Sim;Não negativo
+R$ Conforme;ZZ2_TOTOK;N;12;2;@E 999,999,999.99;Virtual;Não;QTDOK x VLRUNI
+R$ Não Conforme;ZZ2_TOTNOK;N;12;2;@E 999,999,999.99;Virtual;Não;QTDNOK x VLRUNI

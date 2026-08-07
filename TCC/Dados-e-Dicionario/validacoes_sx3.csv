@@ -1,0 +1,7 @@
+﻿Tabela;Campo;X3_VALID / Regra;Mensagem sugerida
+ZZ1;ZZ1_FORNEC;"ExistCpo(""SA2"",xFilial(""SA2"")+M->ZZ1_FORNEC+M->ZZ1_LOJAFO,1)";Fornecedor/loja inexistente na SA2
+ZZ1;ZZ1_VALCER;M->ZZ1_VALCER >= dDataBase;Validade não pode estar vencida na inclusão
+ZZ1;ZZ1_TOLERA;M->ZZ1_TOLERA >= 0 .AND. M->ZZ1_TOLERA <= 100;Tolerância deve estar entre 0 e 100
+ZZ2;ZZ2_CONFOR;"ExistCpo(""ZZ1"",xFilial(""ZZ1"")+M->ZZ2_CONFOR,1)";Controle inexistente na ZZ1
+ZZ2;ZZ2_CODPRO;"ExistCpo(""SB1"",xFilial(""SB1"")+M->ZZ2_CODPRO,1)";Produto inexistente na SB1
+ZZ2;ZZ2_DATA;M->ZZ2_DATA <= dDataBase;Data da ocorrência não pode ser futura
